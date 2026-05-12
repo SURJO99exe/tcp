@@ -27,7 +27,28 @@ A powerful TCP bot for Free Fire with advanced features including spam, lag atta
 
 ## 🔧 Installation
 
-### Windows Setup
+### Quick Setup (Recommended)
+
+#### Windows
+```bash
+# Double-click setup.bat or run:
+setup.bat
+```
+
+#### Linux/Termux
+```bash
+chmod +x install.sh
+./install.sh
+```
+
+The setup scripts will automatically:
+- Create a virtual environment
+- Install all dependencies
+- Configure the project for you
+
+### Manual Setup
+
+#### Windows Setup
 
 1. **Install Python**
    - Download Python from [python.org](https://www.python.org/downloads/)
@@ -39,30 +60,36 @@ A powerful TCP bot for Free Fire with advanced features including spam, lag atta
    cd tcp
    ```
 
-3. **Install Dependencies**
+3. **Create Virtual Environment**
+   ```bash
+   python -m venv venv
+   venv\Scripts\activate
+   ```
+
+4. **Install Dependencies**
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Configure Credentials**
-   - Create a file named `SURJO LIVE.txt` in the project directory
+5. **Configure Credentials**
+   - Copy `SURJO LIVE.txt.example` to `SURJO LIVE.txt`
    - Add your UID and password in this format:
      ```
      YOUR_UID
      YOUR_PASSWORD
      ```
 
-5. **Run the Bot**
+6. **Run the Bot**
    ```bash
    python main.py
    ```
 
-### Linux Setup
+#### Linux Setup
 
 1. **Install Python and pip**
    ```bash
    sudo apt update
-   sudo apt install python3 python3-pip -y
+   sudo apt install python3 python3-pip python3-venv -y
    ```
 
 2. **Clone the Repository**
@@ -71,25 +98,31 @@ A powerful TCP bot for Free Fire with advanced features including spam, lag atta
    cd tcp
    ```
 
-3. **Install Dependencies**
+3. **Create Virtual Environment**
    ```bash
-   pip3 install -r requirements.txt
+   python3 -m venv venv
+   source venv/bin/activate
    ```
 
-4. **Configure Credentials**
-   - Create a file named `SURJO LIVE.txt` in the project directory
+4. **Install Dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+5. **Configure Credentials**
+   - Copy `SURJO LIVE.txt.example` to `SURJO LIVE.txt`
    - Add your UID and password:
      ```
      YOUR_UID
      YOUR_PASSWORD
      ```
 
-5. **Run the Bot**
+6. **Run the Bot**
    ```bash
    python3 main.py
    ```
 
-### Termux Setup
+#### Termux Setup
 
 1. **Install Termux**
    - Download Termux from F-Droid (recommended) or Google Play Store
@@ -109,20 +142,26 @@ A powerful TCP bot for Free Fire with advanced features including spam, lag atta
    cd tcp
    ```
 
-4. **Install Dependencies**
+4. **Create Virtual Environment**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate
+   ```
+
+5. **Install Dependencies**
    ```bash
    pip install -r requirements.txt
    ```
 
-5. **Configure Credentials**
-   - Create a file named `SURJO LIVE.txt` in the project directory
+6. **Configure Credentials**
+   - Copy `SURJO LIVE.txt.example` to `SURJO LIVE.txt`
    - Add your UID and password:
      ```
      YOUR_UID
      YOUR_PASSWORD
      ```
 
-6. **Run the Bot**
+7. **Run the Bot**
    ```bash
    python main.py
    ```
