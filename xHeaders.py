@@ -1,6 +1,6 @@
 import requests , os , psutil , sys , jwt , pickle , json , binascii , time , urllib3 , base64 , datetime , re ,socket , threading
 from protobuf_decoder.protobuf_decoder import Parser
-from HEXOZENTAxC4 import *
+from SURJO_LIVExC4 import *
 from datetime import datetime
 from google.protobuf.timestamp_pb2 import Timestamp
 from concurrent.futures import ThreadPoolExecutor
@@ -132,7 +132,7 @@ def GeT_PLayer_InFo(uid , Token):
             except:
                 NoCLan = True
             if NoCLan:
-            	a = f'''
+                a = f'''
 [b][c][90EE90] [SuccessFully] - Get PLayer s'InFo !
 
 [FFFF00][1] - ProFile InFo :
@@ -145,13 +145,12 @@ def GeT_PLayer_InFo(uid , Token):
  Bio : {player_bio}
  Creating : {account_date}
  LasT LoGin : {last_login}
- 
-  [90EE90]Dev : BLACK_APIs\n'''            
-            	a = a.replace('[i]','')
-            	return a
-            	  	            	            
-            else:            	          	                        
-            	a = f'''
+
+  [90EE90]Dev : BLACK_APIs\n'''
+                a = a.replace('[i]','')
+                return a
+            else:
+                a = f'''
 [b][c][90EE90] [SuccessFully] - Get PLayer s'InFo !
 
 [FFFF00][1] - ProFile InFo :
@@ -174,12 +173,12 @@ def GeT_PLayer_InFo(uid , Token):
  Leader s'Uid : {xMsGFixinG(clan_leader)}
  Leader s'Name : {clan_leader_name}
 
-  [90EE90]Dev : BLACK_APIs\n'''	
-            	a = a.replace('[i]','')    
-            	return a
-                                       
+  [90EE90]Dev : BLACK_APIs\n'''
+                a = a.replace('[i]','')
+                return a
+
         except Exception as e:
-           return f'\n[b][c][FFD700]FaiLEd GeTinG PLayer InFo !\n'
+            return f'\n[b][c][FFD700]FaiLEd GeTinG PLayer InFo !\n'
     else:
         return f'\n[b][c][FFD700]FaiLEd GeTinG PLayer InFo !\n'
     

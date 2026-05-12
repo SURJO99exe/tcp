@@ -1,8 +1,8 @@
 # ======================== IMPORTS =======================
 import requests , os , psutil , jwt , pickle , json , binascii , time , urllib3 , base64 , datetime , re , socket , threading , ssl , pytz , aiohttp , traceback , signal , multiprocessing , asyncio
-from HEXOZENTA_GAMING import DEcwHisPErMsG_pb2 , MajoRLoGinrEs_pb2 , PorTs_pb2 , MajoRLoGinrEq_pb2 , sQ_pb2 , Team_msg_pb2, RemoveFriend_Req_pb2, GetFriend_Res_pb2, spam_request_pb2, devxt_count_pb2, dev_generator_pb2, kyro_title_pb2, room_join_pb2
+from SURJO_LIVE_GAMING import DEcwHisPErMsG_pb2 , MajoRLoGinrEs_pb2 , PorTs_pb2 , MajoRLoGinrEq_pb2 , sQ_pb2 , Team_msg_pb2, RemoveFriend_Req_pb2, GetFriend_Res_pb2, spam_request_pb2, devxt_count_pb2, dev_generator_pb2, kyro_title_pb2, room_join_pb2
 from protobuf_decoder.protobuf_decoder import Parser
-from HEXOZENTAxC4 import * ; from xHeaders import *
+from SURJO_LIVExC4 import * ; from xHeaders import *
 from datetime import datetime
 import urllib.parse
 from google.protobuf.timestamp_pb2 import Timestamp
@@ -220,7 +220,7 @@ uid=4425403128,password=JOBAYAR_CODX-Z6E3PXF1T
 # Save this file and restart the bot
 """
     
-    filename = "HEXOZENTA.txt"
+    filename = "SURJO LIVE.txt"
     if not os.path.exists(filename):
         with open(filename, 'w', encoding='utf-8') as f:
             f.write(template)
@@ -463,9 +463,9 @@ def start_autooo(self):
     except exception as e:
         print(e)
 
-def load_credentials_from_file(filename="HEXOZENTA.txt"):
+def load_credentials_from_file(filename="SURJO LIVE.txt"):
     """
-    Load UID and password from HEXOZENTA.txt.txt file
+    Load UID and password from SURJO LIVE.txt.txt file
     """
     try:
         if not os.path.exists(filename):
@@ -664,11 +664,11 @@ What happens:
             success_msg = f"""[B][C][00FF00]✅ BOT JOIN REQUEST SENT!
 
 🎯 Target: {xMsGFixinG(target_uid)}
-🤖 Bot Name: HEXOZENTA
+🤖 Bot Name: SURJO LIVE
 ✅ Status: Ready to join
 
 📱 Player will see:
-"HEXOZENTA wants to join your team"
+"SURJO LIVE wants to join your team"
 
 ✅ When player clicks ACCEPT:
 Bot will automatically join player's team!
@@ -1953,7 +1953,7 @@ async def banecipher(target_uid, key, iv):
     return bytes.fromhex(final_packet)
 
 async def black666(client_id, key, iv):
-    banner_text = "[FF0000][B][C] ERROR , WELCOME TO [FFFFFF]HEXOZENTA GAMING [00FF00]___ HEXOZENTA ____ BOT ! \n[FFFF00]NEW VERSION NEW FUNCTION !\n[FF0000]TELEGRAM : @hexozenta\n\n"     
+    banner_text = "[FF0000][B][C] ERROR , WELCOME TO [FFFFFF]SURJO LIVE GAMING [00FF00]___ SURJO LIVE ____ BOT ! \n[FFFF00]NEW VERSION NEW FUNCTION !\n[FF0000]TELEGRAM : @SURJO_LIVE\n\n"     
     fields = {
         1: 5,
         2: {
@@ -2589,7 +2589,7 @@ def send_tiktok_info(username):
 
         user = response.json()
 
-        if user.get("credit") != "HEXOZENTA":
+        if user.get("credit") != "SURJO LIVE":
             return "[B][C][FF0000]❌ User Not Found Or Credit Invalid!"
 
 
@@ -2676,7 +2676,7 @@ async def send_youtube_info(channel_name, chat_type, uid, chat_id, key, iv):
 [C][B][FFFFFF]Videos        : [00BFFF]{videos}
 [C][B][FFFFFF]Published At  : [00BFFF]{xMsGFixinG(response_json.get('published_at', ''))}
 [C][B][00FFFF]━━━━━━━━━━━
-[C][B][FFFFFF]Developer     : HEXOZENTA
+[C][B][FFFFFF]Developer     : SURJO LIVE
 """
     # Send main info
     await safe_send_message(chat_type, main_info, uid, chat_id, key, iv)
@@ -2813,9 +2813,9 @@ def send_guild_info(guild_id):
 # ADD FRIEND FUNCTION - BRIGHT RED/GREEN EDITION
 def add_friend(target_uid):
     try:
-        # Read credentials from HEXOZENTA.txt
+        # Read credentials from SURJO LIVE.txt
         try:
-            with open("HEXOZENTA.txt", 'r') as f:
+            with open("SURJO LIVE.txt", 'r') as f:
                 lines = f.read().strip().split('\n')
                 uid = None
                 password = None
@@ -2945,9 +2945,9 @@ def add_friend(target_uid):
 # REMOVE FRIEND FUNCTION - BRIGHT RED/GREEN EDITION
 def remove_friend(target_uid):
     try:
-        # Read credentials from HEXOZENTA.txt
+        # Read credentials from SURJO LIVE.txt
         try:
-            with open("HEXOZENTA.txt", 'r') as f:
+            with open("SURJO LIVE.txt", 'r') as f:
                 lines = f.read().strip().split('\n')
                 uid = None
                 password = None
@@ -3449,7 +3449,7 @@ Please check if the uid is correct.
 [FFFFFF]Likes Before : [00FF00]{xMsGFixinG(likes_before)}  
 [FFFFFF]Likes After : [00FF00]{xMsGFixinG(likes_after)}  
 [C][B][11EAFD]‎━━━━━━━━━━━━
-[C][B][FFB300]Subscribe: [FFFFFF]HEXOZENTA GAMING [00FF00]!!
+[C][B][FFB300]Subscribe: [FFFFFF]SURJO LIVE GAMING [00FF00]!!
 """
         elif status == 2 or likes_before == likes_after:
             # 🚫 Already claimed / Maxed
@@ -3531,7 +3531,7 @@ Please check if the uid is correct.
 [FFFFFF]Likes Before : [00FF00]{xMsGFixinG(likes_before)}  
 [FFFFFF]Likes After : [00FF00]{xMsGFixinG(likes_after)}  
 [C][B][11EAFD]‎━━━━━━━━━━━━
-[C][B][FFB300]Subscribe: [FFFFFF]HEXOZENTA GAMING [00FF00]!!
+[C][B][FFB300]Subscribe: [FFFFFF]SURJO LIVE GAMING [00FF00]!!
 """
         elif status == 2 or likes_before == likes_after:
             # 🚫 Already claimed / Maxed
@@ -4401,8 +4401,8 @@ async def RejectMSGtaxt(squad_owner,uid, key, iv):
 
 
 
-[00FF00]HEXOZENTA TCP
-WELCOME TO HEXOZENTA TCP BOT
+[00FF00]SURJO LIVE TCP
+WELCOME TO SURJO LIVE TCP BOT
 
 
 
@@ -4718,7 +4718,7 @@ async def send_all_titles_sequentially(uid, chat_id, key, iv, region, chat_type)
             # Send the actual title using your existing method
             # You'll need to use your existing title sending logic here
             # For example:
-            title_packet = await convert_kyro_to_your_system(uid, chat_id, key, iv, nickname="HEXOZENTA", title_id=title_id)
+            title_packet = await convert_kyro_to_your_system(uid, chat_id, key, iv, nickname="SURJO LIVE", title_id=title_id)
             
             if title_packet and whisper_writer:
                 whisper_writer.write(title_packet)
@@ -4794,7 +4794,7 @@ async def handle_all_titles_command(inPuTMsG, uid, chat_id, key, iv, region, cha
     await safe_send_message(chat_type, response_msg, uid, chat_id, key, iv)
 
 
-async def noob(target_uid, chat_id, key, iv, nickname="HEXOZENTA", title_id=None):
+async def noob(target_uid, chat_id, key, iv, nickname="SURJO LIVE", title_id=None):
     """EXACT conversion with customizable title ID"""
     try:
         # Use provided title_id or get random one
@@ -4870,7 +4870,7 @@ async def send_all_titles_sequentiallly(uid, chat_id, key, iv, region, chat_type
     total_titles = len(all_titles)
     
     # Send initial message
-    start_msg = f"""[B][C][00FF00] Noobde HEXOZENTA ya meku agar tu noob bolra toh tu g a y hai
+    start_msg = f"""[B][C][00FF00] Noobde SURJO LIVE ya meku agar tu noob bolra toh tu g a y hai
 
 
 """
@@ -4885,7 +4885,7 @@ async def send_all_titles_sequentiallly(uid, chat_id, key, iv, region, chat_type
             # Send the actual title using your existing method
             # You'll need to use your existing title sending logic here
             # For example:
-            title_packet = await noob(uid, chat_id, key, iv, nickname="HEXOZENTA", title_id=title_id)
+            title_packet = await noob(uid, chat_id, key, iv, nickname="SURJO LIVE", title_id=title_id)
             
             if title_packet and whisper_writer:
                 whisper_writer.write(title_packet)
@@ -6797,7 +6797,7 @@ async def TcPOnLine(ip, port, key, iv, AutHToKen, reconnect_delay=0.5):
                                 print(f"🚫 Bot is private! Ignoring invite from {squad_owner}")
                                  # Send quick reject message
                                 bot_uid = 13777711848
-                                message_text = f" Can't accept Your request Talk to HEXOZENTA"
+                                message_text = f" Can't accept Your request Talk to SURJO LIVE"
                                 private_msg_packet = await xSEndMsg(
                                     Msg=message_text,
                                     Tp=2,  # 2 = Private message
@@ -6898,11 +6898,11 @@ async def TcPOnLine(ip, port, key, iv, AutHToKen, reconnect_delay=0.5):
                         await SEndPacKeT(whisper_writer , online_writer , 'ChaT' , JoinCHaT)
                         
                         def get_random_color(): return "_" 
-                        message = """[B][C][FF0000]█▓▒░░ WELCOME TO HEXOZENTA BOT ░░▒▓█
+                        message = """[B][C][FF0000]█▓▒░░ WELCOME TO SURJO LIVE BOT ░░▒▓█
 [00FF00]»»————-　★　————-««
-[FFFFFF]⚡ BOT POWERED BY:[FF0000] HEXOZENTA GAMING
+[FFFFFF]⚡ BOT POWERED BY:[FF0000] SURJO LIVE GAMING
 [FFFFFF]🎯 STATUS: [00FF00]ACTIVE 24/7
-[FFFFFF]📱 CONTACT: [FFFF00]@HEXOZENTA
+[FFFFFF]📱 CONTACT: [FFFF00]@SURJO LIVE
 [00FF00]»»————-　★　————-««
 [FF0000]█▓▒░░ ENJOY THE BOT! ░░▒▓█"""
                         # In your auto-join (Old Handler) code, find this line:
@@ -6929,11 +6929,11 @@ async def TcPOnLine(ip, port, key, iv, AutHToKen, reconnect_delay=0.5):
                 if senthi == True:
                     
                     def get_random_color(): return "_" 
-                    message = """[B][C][FF0000]█▓▒░░ WELCOME TO HEXOZENTA BOT ░░▒▓█
+                    message = """[B][C][FF0000]█▓▒░░ WELCOME TO SURJO LIVE BOT ░░▒▓█
 [00FF00]»»————-　★　————-««
-[FFFFFF]⚡ BOT POWERED BY:[FF0000] HEXOZENTA 
+[FFFFFF]⚡ BOT POWERED BY:[FF0000] SURJO LIVE 
 [FFFFFF]🎯 STATUS: [00FF00]ACTIVE 24/7
-[FFFFFF]📱 CONTACT: [FFFF00]@HEXOZENTA
+[FFFFFF]📱 CONTACT: [FFFF00]@SURJO LIVE
 [00FF00]»»————-　★　————-««
 [FF0000]█▓▒░░ ENJOY THE BOT! ░░▒▓█"""
                         # In your auto-join (Old Handler) code, find this line:
@@ -7358,9 +7358,9 @@ async def TcPChaT(ip, port, AutHToKen, key, iv, LoGinDaTaUncRypTinG, ready_event
 
 📝 Examples:
 /bio Hello World!
-/bio 🤖 Bot by HEXOZENTA
+/bio 🤖 Bot by SURJO LIVE
 /bio Level 70 | Pro Player
-/bio Add me: HEXOZENTA
+/bio Add me: SURJO LIVE
 
 ✨ Features:
 • Changes bot's profile bio instantly
@@ -7384,7 +7384,7 @@ async def TcPChaT(ip, port, AutHToKen, key, iv, LoGinDaTaUncRypTinG, ready_event
                                 await safe_send_message(response.Data.chat_type, initial_msg, uid, chat_id, key, iv)
         
                                 # FIXED: Handle credentials properly
-                                credentials = load_credentials_from_file("HEXOZENTA.txt")
+                                credentials = load_credentials_from_file("SURJO LIVE.txt")
                                 if not credentials:
                                     error_msg = f"[B][C][FF0000]❌ Failed to load credentials from file!\n"
                                     await safe_send_message(response.Data.chat_type, error_msg, uid, chat_id, key, iv)
@@ -7746,7 +7746,7 @@ async def TcPChaT(ip, port, AutHToKen, key, iv, LoGinDaTaUncRypTinG, ready_event
 
                             target_channel = inPuTMsG.strip()[4:].strip()  # /yt এর পরের সব text  
                             if not target_channel:  
-                                error_msg = f"[B][C][FF0000]❌ ERROR! Usage: /yt <channel>\nExample: /yt hexozenta gaming\n"  
+                                error_msg = f"[B][C][FF0000]❌ ERROR! Usage: /yt <channel>\nExample: /yt SURJO LIVE GAMING\n"  
                                 await safe_send_message(response.Data.chat_type, error_msg, uid, chat_id, key, iv)  
                             else:  
                                 initial_message = f"[B][C]{get_random_color()}\nFetching YouTube info for {target_channel}...\n"  
@@ -8409,7 +8409,7 @@ Thinking about getting a server in your name with a panel?
 
 All of this is available, just contact me!
 
-[b][i][FFC0CB]youtube: HEXOZENTA GAMING[/b]
+[b][i][FFC0CB]youtube: SURJO LIVE GAMING[/b]
 
 [b][c][FFC0CB]subcribe: my_channel[FFFFFF]
  
@@ -8420,7 +8420,7 @@ All of this is available, just contact me!
 Enjoy the bot my friend.......
 
 [C][B][0000FF] Created by Black666FF
-Modified by - HEXOZENTA
+Modified by - SURJO LIVE
 """
                             await safe_send_message(response.Data.chat_type, admin_message, uid, chat_id, key, iv)
 
@@ -8749,7 +8749,7 @@ Modified by - HEXOZENTA
                                     await safe_send_message(response.Data.chat_type, error_msg, uid, chat_id, key, iv)
 
 # NEW LAG COMMAND (AUTO STOP AFTER 10 SECONDS)
-                        if inPuTMsG.startswith('/Hexozentaerror'):
+                        if inPuTMsG.startswith('/SURJO_LIVEerror'):
                             # Process /lag command in any chat type
                             parts = inPuTMsG.strip().split()
                             
@@ -8762,7 +8762,7 @@ Modified by - HEXOZENTA
                                 try:
                                     dd = chatdata['5']['data']['16']
                                     print('msg in private')
-                                    message = f"[B][C][FF00AA]\n\nGROUP LAG STARTED !![FF00FF]\n\n❄️DURATION 30 SECOND !!\n\n[00FFFF]BOT OWNER: HEXOZENTA \n\n"
+                                    message = f"[B][C][FF00AA]\n\nGROUP LAG STARTED !![FF00FF]\n\n❄️DURATION 30 SECOND !!\n\n[00FFFF]BOT OWNER: SURJO LIVE \n\n"
                                     P = await SEndMsG(response.Data.chat_type , message , uid , chat_id , key , iv , region)
                                     await SEndPacKeT(whisper_writer , online_writer , 'ChaT' , P)
 
@@ -9220,7 +9220,7 @@ Modified by - HEXOZENTA
 
 
 # GLOBAL BLOCKED NAMES
-                        BLOCKED_NAMES = ["maruf", "hexozenta", "hexo-king", "hexo_king", "hexoking", "hexo king"]  # Protected names
+                        BLOCKED_NAMES = ["maruf", "SURJO_LIVE", "SURJO-LIVE", "SURJO_LIVE", "SURJOLIVE", "SURJO LIVE"]  # Protected names
 
                         # GALi / JOKE MESSAGE
                         if inPuTMsG.strip().startswith('/gali'):
@@ -9402,7 +9402,7 @@ Modified by - HEXOZENTA
 ║                                       
 ║ ────────────── 
 ║                                       
-║ ⚡ [FF00FF] HEXOZENTA GAMING VIP BOT ⚡   
+║ ⚡ [FF00FF] SURJO LIVE GAMING VIP BOT ⚡   
 ╚═════════════╝"""
                             await safe_send_message(response.Data.chat_type, admin_message, uid, chat_id, key, iv)
 
@@ -10001,7 +10001,7 @@ Modified by - HEXOZENTA
                             # else: "User" ই থাকবে
 
                             # Header with player name
-                            header = f"[c][00FF00]Hey {player_name} [00FFFF]Welcome To HEXOZENTA's BOT"
+                            header = f"[c][00FF00]Hey {player_name} [00FFFF]Welcome To SURJO LIVE's BOT"
                             await safe_send_message(response.Data.chat_type, header, uid, chat_id, key, iv)
                             await asyncio.sleep(0.2)
 
@@ -10106,7 +10106,7 @@ Modified by - HEXOZENTA
                             footer = """[00FFFA]╔═•══•════════════════•══•═╗
 [FF1493]║ ⚡ [B][FFFF00]BOT INFO[FFFF00][/B] ⚡
 [00FFFA]║
-[FFFF00]║ 👤 Developer    :: [FF1493]HEXOZENTA GAMING
+[FFFF00]║ 👤 Developer    :: [FF1493]SURJO LIVE GAMING
 [32CD32]║ 💻 Status       :: [32CD32]ONLINE
 [1E90FF]║ 🛠 Version      :: [1E90FF]ENHANCED V2
 [00FFFA]╚═•══•════════════════•══•═╝"""
@@ -10124,12 +10124,12 @@ Modified by - HEXOZENTA
 
 async def MaiiiinE():
     # Load credentials from file
-    print("📁 Loading credentials from HEXOZENTA.txt...")
-    credentials = load_credentials_from_file("HEXOZENTA.txt")
+    print("📁 Loading credentials from SURJO LIVE.txt...")
+    credentials = load_credentials_from_file("SURJO LIVE.txt")
     
     if not credentials:
         print("❌ Failed to load credentials!")
-        print("💡 Please create HEXOZENTA.txt with your UID and password")
+        print("💡 Please create SURJO LIVE.txt with your UID and password")
         print("📝 Format: uid=YOUR_UID,password=YOUR_PASSWORD")
         return None
     
@@ -10203,7 +10203,7 @@ async def MaiiiinE():
     # Clear screen and show status
     os.system('clear')
     print("=" * 50)
-    print("🤖 HEXOZENTA BOT - INITIALIZING")
+    print("🤖 SURJO LIVE BOT - INITIALIZING")
     print("=" * 50)
     print("🔄 Starting TCP Connections...")
     print("📡 Connecting to Free Fire servers...")
@@ -10259,7 +10259,7 @@ async def MaiiiinE():
     
     # Show loading animation
     os.system('clear')
-    print("🤖 HEXOZENTA BOT - STARTING")
+    print("🤖 SURJO LIVE BOT - STARTING")
     print("=" * 50)
     
     for i in range(1, 4):
@@ -10268,7 +10268,7 @@ async def MaiiiinE():
         time.sleep(0.3)
     
     os.system('clear')
-    print("🤖 HEXOZENTA BOT - CONNECTING")
+    print("🤖 SURJO LIVE BOT - CONNECTING")
     print("=" * 50)
     print("┌────────────────────────────────────┐")
     print("│ ██████████████████████████████████ │")
@@ -10285,7 +10285,7 @@ async def MaiiiinE():
     # Final status display
     os.system('clear')
     print("=" * 50)
-    print("🤖 HEXOZENTA BOT - ONLINE")
+    print("🤖 SURJO LIVE BOT - ONLINE")
     print("=" * 50)
     print(f"🔹 UID: {TarGeT}")
     print(f"🔹 Name: {acc_name}")
