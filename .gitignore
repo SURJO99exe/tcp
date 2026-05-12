@@ -34,11 +34,11 @@ env/
 *~
 
 # Credentials and sensitive data
-SURJO LIVE.txt
+# SURJO LIVE.txt (now tracked as template)
 *.txt
 !requirements.txt
 !README.md
-!SURJO LIVE.txt.example
+!SURJO LIVE.txt
 
 # Cache and runtime files
 *.pkl
