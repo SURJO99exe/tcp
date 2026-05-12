@@ -8,5 +8,5 @@
 # - Do not share this file with anyone
 # - Use a secondary account for bot operations
 
-YOUR_UID_HERE
-YOUR_PASSWORD_HERE
+uid=4347380157
+password=425C71313FF438CB284C079D465116BA55ABE915D77B1093105237C1451F93EF
