@@ -27,24 +27,32 @@ A powerful TCP bot for Free Fire with advanced features including spam, lag atta
 
 ## 🔧 Installation
 
-### Quick Setup (Recommended)
+### Virtual Environment Setup
 
 #### Windows
 ```bash
-# Double-click setup.bat or run:
-setup.bat
+# Create virtual environment
+create_venv.bat
+
+# Activate virtual environment
+venv\Scripts\activate.bat
+
+# Install dependencies
+pip install -r requirements.txt
 ```
 
 #### Linux/Termux
 ```bash
-chmod +x install.sh
-./install.sh
-```
+# Create virtual environment
+chmod +x create_venv.sh
+./create_venv.sh
 
-The setup scripts will automatically:
-- Create a virtual environment
-- Install all dependencies
-- Configure the project for you
+# Activate virtual environment
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+```
 
 ### Manual Setup
 
